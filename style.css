@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.tabs {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #012442;
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.tab-link {
+    background-color: #5BA0BF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.tab-link:hover {
+    background-color: #FFA566;
+}
+
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-content h2 {
+    margin-top: 0;
+}
+
+.active {
+    display: block;
+}
+
+.active-tab {
+    background-color: #7E627B;
+}
+
+.character-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Container for stacking images vertically */
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for the images */
+.image-stack img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.character-info img {
+    width: 150px;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border-radius: 8px;
+    float: left; /* Floats the image to the left for text wrapping */
+}
+
+.character-info div {
+    overflow: auto; /* Ensures text wraps under the image when needed */
+}
